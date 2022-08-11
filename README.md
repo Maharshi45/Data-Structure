@@ -17,6 +17,6 @@
 
 ## Bubble sort ##
 * In-place algorithm
-* O(n^2) time complexity
+* O(n<sup>2</sup>) time complexity
 * 100 steps for 10 items, 10000 steps for 100 items, 1000000 steps for 1000 items
 * Algorithm degrades quickly
