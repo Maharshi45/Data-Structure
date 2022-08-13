@@ -1,5 +1,5 @@
-# Data-Structure #
-## Arrays ##
+# Data-Structure
+## Arrays
 * Contiguous block in memory
 * Every element occupies the same amount of space in memory
 * if an array starts at memory address x, and the size of each element in array is y, we can calculate the memory address of ith element by using following expression: x + i * y
@@ -15,24 +15,24 @@
 |Delete an element by setting it null|O(1)|
 |Delete an element by shifting elements|O(n)|
 
-## Bubble sort ##
+## Bubble sort
 * In-place algorithm
 * O(n<sup>2</sup>) time complexity
 * 100 steps for 10 items, 10000 steps for 100 items, 1000000 steps for 1000 items
 * Algorithm degrades quickly
 
-## Selection sort ##
+## Selection sort
 * In-place algorithm
 * O(n<sup>2</sup>) time complexity
 * Doesn't require as much swapping as bubble sort
 * Unstable algorithm
 
-## Insertion sort ##
+## Insertion sort
 * In-place algorithm
 * O(n<sup>2</sup>) time complexity
 * Stable algorithm
 
-## Shell sort ##
+## Shell sort
 * Variation of Insertion sort
 * Insertion sort chooses which element to insert using a gap of 1
 * Shell sort starts out using a larger gap value
