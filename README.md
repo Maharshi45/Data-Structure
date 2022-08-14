@@ -56,15 +56,15 @@
 * O(nlogn) - base 2. We are repeatedly dividing the array in half during the splitting phase
 * Stable algorithm
 
-i. ### Splitting phase
-* Start with an unsorted array
-* Divide the array into two arrays, which are unsorted. The first array is the left array and the second array is the right array.
-* Split the right and left array into two arrays each
-* Keep splitting until all the arrays has only one element each - these arrays are sorted
+1. ### Splitting phase
+  * Start with an unsorted array
+  * Divide the array into two arrays, which are unsorted. The first array is the left array and the second array is the right array.
+  * Split the right and left array into two arrays each
+  * Keep splitting until all the arrays has only one element each - these arrays are sorted
 
-ii. ### Merging phase
-* Merge every left/right pair of sibling arrays into a sorted array
-* After the first merge, we will have bunch of 2-element sorted arrays
-* Then merge those sorted arrays(left/right siblings) to end up with a bunch of 4-element sorted arrays
-* Repeat until you have a single sorted array
-* Not in-place algorithm. Uses temporary arrays
+2. ### Merging phase
+  * Merge every left/right pair of sibling arrays into a sorted array
+  * After the first merge, we will have bunch of 2-element sorted arrays
+  * Then merge those sorted arrays(left/right siblings) to end up with a bunch of 4-element sorted arrays
+  * Repeat until you have a single sorted array
+  * Not in-place algorithm. Uses temporary arrays
