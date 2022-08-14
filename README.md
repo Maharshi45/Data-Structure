@@ -55,6 +55,7 @@
 * Splitting is logical. We dont create new arrays
 * O(nlogn) - base 2. We are repeatedly dividing the array in half during the splitting phase
 * Stable algorithm
+* Not in-place algorithm. Uses temporary arrays
 
 ### 1. Splitting phase
 * Start with an unsorted array
@@ -67,4 +68,3 @@
 * After the first merge, we will have bunch of 2-element sorted arrays
 * Then merge those sorted arrays(left/right siblings) to end up with a bunch of 4-element sorted arrays
 * Repeat until you have a single sorted array
-* Not in-place algorithm. Uses temporary arrays
