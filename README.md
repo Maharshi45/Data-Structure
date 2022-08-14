@@ -46,3 +46,25 @@
 * O(n<sup>2</sup>) time complexity
 * Does not require as much shifting as insertion sort, so usually performs better
 * Unstable algorithm(Unlike insertion sort)
+
+## Merge sort
+* Divide and conquer algorithm
+* Recursive algorithm
+* Two phases: splitting and Merging
+* Splitting phase leads to faster merging during the merging phase
+* Splitting is logical. We dont create new arrays
+* O(nlogn) - base 2. We are repeatedly dividing the array in half during the splitting phase
+* Stable algorithm
+
+### Splitting phase
+* Start with an unsorted array
+* Divide the array into two arrays, which are unsorted. The first array is the left array and the second array is the right array.
+* Split the right and left array into two arrays each
+* Keep splitting until all the arrays has only one element each - these arrays are sorted
+
+### Merging phase
+* Merge every left/right pair of sibling arrays into a sorted array
+* After the first merge, we will have bunch of 2-element sorted arrays
+* Then merge those sorted arrays(left/right siblings) to end up with a bunch of 4-element sorted arrays
+* Repeat until you have a single sorted array
+* Not in-place algorithm. Uses temporary arrays
