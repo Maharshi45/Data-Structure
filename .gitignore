@@ -27,3 +27,8 @@ hs_err_pid*
 */.settings/
 */.classpath
 */.project
+
+# IntelliJ ignore files and folders
+*.iml
+**/.idea
+**/out
