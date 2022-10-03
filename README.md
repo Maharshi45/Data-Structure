@@ -5,15 +5,15 @@
 * if an array starts at memory address x, and the size of each element in array is y, we can calculate the memory address of ith element by using following expression: x + i * y
 * if we know the index of an element, the time to retrieve the element will be the same, no matter where it is in the array
 
-|Operations|Time Complexity|
-|----------|---------------|
-|Retrieve with index|O(1)-Constant time|
-|Retrieve without index|O(n)-Linear time|
-|Add an element to a full array|O(n)|
-|Add an element to the end of an array(has space)|O(1)|
-|Insert or update an element at a specific index|O(1)|
-|Delete an element by setting it null|O(1)|
-|Delete an element by shifting elements|O(n)|
+| Operations                                       | Time Complexity    |
+|--------------------------------------------------|--------------------|
+| Retrieve with index                              | O(1)-Constant time |
+| Retrieve without index                           | O(n)-Linear time   |
+| Add an element to a full array                   | O(n)               |
+| Add an element to the end of an array(has space) | O(1)               |
+| Insert or update an element at a specific index  | O(1)               |
+| Delete an element by setting it null             | O(1)               |
+| Delete an element by shifting elements           | O(n)               |
 
 ## Bubble sort
 * In-place algorithm
@@ -52,7 +52,7 @@
 * Recursive algorithm
 * Two phases: splitting and Merging
 * Splitting phase leads to faster merging during the merging phase
-* Splitting is logical. We dont create new arrays
+* Splitting is logical. We don't create new arrays
 * O(nlogn) - base 2. We are repeatedly dividing the array in half during the splitting phase
 * Stable algorithm
 * Not in-place algorithm. Uses temporary arrays
@@ -68,3 +68,27 @@
 * After the first merge, we will have bunch of 2-element sorted arrays
 * Then merge those sorted arrays(left/right siblings) to end up with a bunch of 4-element sorted arrays
 * Repeat until you have a single sorted array
+
+## Quick sort
+* Divide and conquer algorithm
+* Recursive algorithm
+* Uses a pivot element to partition the array into two parts
+* Elements < pivot to its left, elements > pivot to its right
+* Pivot will then be in its correct sorted position
+* Process is now repeated for the left array and right array
+* Eventually, every element has been the pivot, so every element will be in its correct sorted position
+* As with merge sort, we'll end up partitioning the array into a series of 1-element arrays
+* Does this in-place(unlike merge sort)
+* In-place algorithm
+* O(nlogn) - base 2. We're repeatedly partitioning the array into 2 halves
+* Unstable algorithm
+
+## Counting sort
+* Makes assumptions about the data
+* Doesn't use comparisons
+* Counts the number of occurrences of each value
+* Only works with non-negative discrete values(cant work with floats, strings)
+* Values must be within a specific range
+* Not an in-place algorithm
+* O(n) - can achieve this because we're making assumption about the data
+* If we want the sort to be stable, we have to do some extra steps
