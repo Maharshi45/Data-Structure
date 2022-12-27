@@ -92,3 +92,16 @@
 * Not an in-place algorithm
 * O(n) - can achieve this because we're making assumption about the data
 * If we want the sort to be stable, we have to do some extra steps
+
+## Radix sort
+* Makes assumptions about the data
+* Data must have same radix and width
+* Because of this, data must be integers or strings
+* Sort based on each individual digit or letter position
+* Start at the rightmost position
+* Must use a stable sort algorithm at each stage
+* Counting sort is often used as the sort algorithm for radix sort - must be stable counting sort
+* O(n) can achieve this because we are making assumption about the data we are sorting
+* Even so, it often runs slower than O(nlogn) because of the overhead involved
+* In-place depends upon which sort algorithm you use
+* Stable algorithm
