@@ -42,8 +42,7 @@ public class Main {
             temp[--countArray[getDigit(position, input[tempIndex], radix)]] = input[tempIndex];
         }
 
-        for (int tempIndex = 0; tempIndex < numItems; tempIndex++)
-            input[tempIndex] = temp[tempIndex];
+        System.arraycopy(temp, 0, input, 0, numItems);
 
     }
 
