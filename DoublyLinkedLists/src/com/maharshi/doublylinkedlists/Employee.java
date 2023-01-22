@@ -1,4 +1,4 @@
-package com.maharshi.linkedlists;
+package com.maharshi.doublylinkedlists;
 
 import java.util.Objects;
 
