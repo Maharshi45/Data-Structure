@@ -26,12 +26,17 @@ public class Main {
         employeeLinkedList.printList();
 
         Employee jamesBond = new Employee("James", "Bond", 7);
-        employeeLinkedList.addAfter(marySmith, jamesBond);
+        employeeLinkedList.addAfter(janeJones, jamesBond);
         System.out.println("Size: " + employeeLinkedList.getSize());
         employeeLinkedList.printList();
 
         Employee bruceWayne = new Employee("Bruce", "Wayne", 10);
         employeeLinkedList.addBefore(marySmith, bruceWayne);
+        System.out.println("Size: " + employeeLinkedList.getSize());
+        employeeLinkedList.printList();
+
+        Employee kentClark = new Employee("Kent", "Clark", 10);
+        employeeLinkedList.addBefore(jamesBond, kentClark);
         System.out.println("Size: " + employeeLinkedList.getSize());
         employeeLinkedList.printList();
 
