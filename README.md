@@ -105,3 +105,11 @@
 * Even so, it often runs slower than O(nlogn) because of the overhead involved
 * In-place depends upon which sort algorithm you use
 * Stable algorithm
+
+## Stacks
+* Abstract Data Type
+* LIFO - last in first out
+* Push - adds an item as the top on the stack
+* Pop - removes the top item on the stack
+* Peek - gets the top item on the stack without popping it
+* Ideal backing data structure - linked list
