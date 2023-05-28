@@ -113,3 +113,10 @@
 * Pop - removes the top item on the stack
 * Peek - gets the top item on the stack without popping it
 * Ideal backing data structure - linked list
+
+## Queues
+* Abstract Data Type
+* FIFO - first in, first out
+* add - also called as enqueue, add an item to the end of the queue
+* remove - also called as deque, remove an item at the front of the queue
+* peek - get the item at the front of the queue, but dont remove it
