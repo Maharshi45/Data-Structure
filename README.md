@@ -120,3 +120,23 @@
 * add - also called as enqueue, add an item to the end of the queue
 * remove - also called as deque, remove an item at the front of the queue
 * peek - get the item at the front of the queue, but dont remove it
+
+## Hash Tables
+* Abstract Data Type
+* Provide access to data using key
+* Key doesn't have to be an integer
+* Consists of key/value pairs - data types don't have to match
+* Optimized for retrieval (when you know the key)
+* Associative array is one type of hash table
+* Maps keys of any data type to integer
+* Hash function maps keys to integer
+* In Java, hash function is Object.hashCode()
+* Collision occurs when more than one key has the same hashed value
+
+### Load Factor
+* Tells us how full a hash table is
+* Load factor = # of items / capacity = size / capacity
+* Load factor is used to decide when to resize an array backing the hash table
+* Don't want load factor too low(lots of empty spaces)
+* Don't want load factor too high(will increase the likelihood of collision)
+* Can play a role in determining the time complexity for retrieval
