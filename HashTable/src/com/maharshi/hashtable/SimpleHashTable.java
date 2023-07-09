@@ -42,6 +42,16 @@ public class SimpleHashTable {
         else {
             Employee employee = hashTable[hashedKey].getEmployee();
             hashTable[hashedKey] = null;
+            /**
+             * Rehashing of the hashtable
+             */
+            StoredEmployee[] oldHashTable = hashTable;
+            hashTable = new StoredEmployee[oldHashTable.length];
+            for (int i = 0; i < oldHashTable.length; i++) {
+                if (oldHashTable[i] != null) {
+                    put(oldHashTable[i].getKey(), oldHashTable[i].getEmployee());
+                }
+            }
             return employee;
         }
     }

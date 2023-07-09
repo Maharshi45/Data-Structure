@@ -19,7 +19,7 @@ public class Main {
         hashTable.printHashTable();
 
 
-        System.out.println("Removed employee: " + hashTable.remove(jamesBond.getLastName()));
+        System.out.println("Removed employee: " + hashTable.remove(mikeWilson.getLastName()));
         System.out.println("=====After=====");
         hashTable.printHashTable();
 
