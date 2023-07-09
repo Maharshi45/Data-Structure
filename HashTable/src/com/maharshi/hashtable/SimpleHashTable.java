@@ -35,6 +35,17 @@ public class SimpleHashTable {
         return hashedKey == -1 ? null : hashTable[hashedKey].getEmployee();
     }
 
+    public Employee remove(String key) {
+        int hashedKey = findKey(key);
+        if (hashedKey == -1)
+            return null;
+        else {
+            Employee employee = hashTable[hashedKey].getEmployee();
+            hashTable[hashedKey] = null;
+            return employee;
+        }
+    }
+
     private int hashKey(String key) {
         return key.length() % hashTable.length;
     }
